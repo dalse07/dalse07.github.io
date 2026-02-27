@@ -141,6 +141,50 @@ body {
     color: #9ca3af;
 }
 
+.details {
+    margin-bottom: 1rem;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    background-color: #f6f8fa;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.details:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #0366d6;
+}
+
+.summary {
+    padding: 15px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none; /* 기본 화살표 제거 */
+    background-color: #ffffff;
+    color: #24292e;
+    display: flex;
+    align-items: center;
+}
+
+.summary::before {
+    content: "▶";
+    margin-right: 12px;
+    font-size: 0.8rem;
+    transition: transform 0.2s;
+    color: #0366d6;
+}
+
+.details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.details .content {
+    padding: 20px;
+    border-top: 1px solid #e1e4e8;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
 @media (max-width: 640px) {
     .profile-card {
         grid-template-columns: 1fr;
@@ -156,4 +200,5 @@ body {
     }
 
 }
+
 

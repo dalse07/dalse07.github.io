@@ -106,7 +106,7 @@ body {
 
 .section-card p {
     font-size: 14px;
-    color: #ffffff;
+    color: #374151;
 }
 
 .tag-list {
@@ -140,4 +140,5 @@ body {
     .profile-card {
         padding: 20px 16px 18px;
     }
+
 }
